@@ -24,12 +24,13 @@ function Campos(campo1){
 }
 
 //botao vai disparar
-const btnEnviar = document.getSelector('#btmSubmit');
+const btnEnviar = document.querySelector('#btnSubmit');
 //envio do click
 btnEnviar.addEventListener('click', ()=>{
-    const inputCampo = document.getSelector("#campo1");})
+    const inputCampo = document.querySelector("#campo1");
 //instancia recebendo o objeto
-let info = new Campos(inputCampo.value)
+let info = new Campos(inputCampo.value);
 // lista de usuarios que receber do objeto
 listaDados.push(info);
-localStorage.setItem("dados", JSON.stringify(listaDados))
+localStorage.setItem("dados", JSON.stringify(listaDados));
+})
